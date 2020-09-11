@@ -1,0 +1,116 @@
+import * as actionType from '../action/actiontype'
+
+const initialState={
+    signin:false,
+    signup:false,
+    loading:false,
+    signupSuccessMsg:false,
+    signupErrorMsg:'',
+    signupError:false,
+    token:null,
+    id:null,
+    signinErrorMsg:'',
+    signinError:false,
+    signinSuccessMsg:false
+}
+
+const auth=(state=initialState,action)=>{
+    switch(action.type){
+        case(actionType.SIGNUP_SELECTED):
+            return{
+                ...state,
+                signup:true,
+                signin:false
+            }
+        case(actionType.SIGNIN_SELECTED):
+            return{
+                ...state,
+                signin:true,
+                signup:false
+            }
+        case(actionType.SIGNUP_INIT):
+            if(window.location.pathname==='/signup'){
+                return{
+                    ...state,
+                    signup:true,
+                    signin:false
+                }
+            }else return state
+        case(actionType.SIGNIN_INIT):
+            if(window.location.pathname==='/signin'){
+                return{
+                    ...state,
+                    signup:false,
+                    signin:true
+                }
+            }else return state
+        case(actionType.SIGNUP_START):
+            return{
+                ...state,
+                loading:true
+            }
+        case(actionType.SIGNUP_SUCCESS):
+            return{
+                ...state,
+                loading:false,
+                signupSuccessMsg:true
+            }
+        case(actionType.SIGNUP_FAILED):
+            return{
+                ...state,
+                loading:false,
+                signupErrorMsg:action.error,
+                signupError:true
+            }
+        case(actionType.CLOSE_SIGNUP_SUCCESS_MSG):
+            return{
+                ...state,
+                signupSuccessMsg:false
+            }
+        case(actionType.CLOSE_SIGNUP_ERROR_MSG):
+            return{
+                ...state,
+                signupError:false
+            }
+        case(actionType.SIGNIN_START):
+            return{
+                ...state,
+                loading:true
+            }
+        case(actionType.SIGNIN_SUCCESS):
+            return{
+                ...state,
+                token:action.token,
+                id:action.id,
+                loading:false,
+                signinSuccessMsg:true
+            }
+        case(actionType.SIGNIN_FAILED):
+            return{
+                ...state,
+                signinError:true,
+                signinErrorMsg:action.error,
+                loading:false
+            }
+        case(actionType.CLOSE_SIGNIN_SUCCESS_MSG):
+            return{
+                ...state,
+                signinSuccessMsg:false
+            }
+        case(actionType.CLOSE_SIGNIN_ERROR_MSG):
+            return{
+                ...state,
+                signinError:false
+            }
+        case(actionType.LOGOUT):
+            return{
+                ...state,
+                token:null,
+                id:null
+            }
+        default:
+            return state
+    }
+}
+
+export default auth
