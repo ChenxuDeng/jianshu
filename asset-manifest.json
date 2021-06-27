@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/jianshu/static/css/main.32ae480d.chunk.css",
+    "main.js": "/jianshu/static/js/main.4cd10893.chunk.js",
+    "main.js.map": "/jianshu/static/js/main.4cd10893.chunk.js.map",
+    "runtime-main.js": "/jianshu/static/js/runtime-main.36961724.js",
+    "runtime-main.js.map": "/jianshu/static/js/runtime-main.36961724.js.map",
+    "static/css/2.32895dee.chunk.css": "/jianshu/static/css/2.32895dee.chunk.css",
+    "static/js/2.f4fe3ea8.chunk.js": "/jianshu/static/js/2.f4fe3ea8.chunk.js",
+    "static/js/2.f4fe3ea8.chunk.js.map": "/jianshu/static/js/2.f4fe3ea8.chunk.js.map",
+    "index.html": "/jianshu/index.html",
+    "precache-manifest.a9b4c8d19587df73c18b72544aadc6c9.js": "/jianshu/precache-manifest.a9b4c8d19587df73c18b72544aadc6c9.js",
+    "service-worker.js": "/jianshu/service-worker.js",
+    "static/css/2.32895dee.chunk.css.map": "/jianshu/static/css/2.32895dee.chunk.css.map",
+    "static/css/main.32ae480d.chunk.css.map": "/jianshu/static/css/main.32ae480d.chunk.css.map",
+    "static/js/2.f4fe3ea8.chunk.js.LICENSE.txt": "/jianshu/static/js/2.f4fe3ea8.chunk.js.LICENSE.txt",
+    "static/media/app content1.png": "/jianshu/static/media/app content1.b2e2caa2.png",
+    "static/media/app content2.png": "/jianshu/static/media/app content2.378196f0.png",
+    "static/media/app content3.png": "/jianshu/static/media/app content3.a3e7f05f.png",
+    "static/media/app content4.png": "/jianshu/static/media/app content4.ed9583c5.png",
+    "static/media/appphone.png": "/jianshu/static/media/appphone.7dfef21c.png",
+    "static/media/footer2.png": "/jianshu/static/media/footer2.e6e244a2.png",
+    "static/media/footer3.jpg": "/jianshu/static/media/footer3.57fe174b.jpg",
+    "static/media/footer4.jpg": "/jianshu/static/media/footer4.10518f0f.jpg",
+    "static/media/rec1.webp": "/jianshu/static/media/rec1.ac7ba4ab.webp",
+    "static/media/rec2.webp": "/jianshu/static/media/rec2.d81d2934.webp",
+    "static/media/rec3.webp": "/jianshu/static/media/rec3.2f377f17.webp",
+    "static/media/rec4.webp": "/jianshu/static/media/rec4.13cc0dac.webp",
+    "static/media/rec5.webp": "/jianshu/static/media/rec5.dc7525c8.webp",
+    "static/media/rec6.png": "/jianshu/static/media/rec6.b3144252.png",
+    "static/media/recommend.png": "/jianshu/static/media/recommend.03cc8798.png",
+    "static/media/wechat.svg": "/jianshu/static/media/wechat.ac6f1056.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.36961724.js",
+    "static/css/2.32895dee.chunk.css",
+    "static/js/2.f4fe3ea8.chunk.js",
+    "static/css/main.32ae480d.chunk.css",
+    "static/js/main.4cd10893.chunk.js"
+  ]
+}
